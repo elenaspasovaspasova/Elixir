@@ -3,7 +3,7 @@
       "sdkVersion": "27.0.0",
       "name": "Elixir",
       "splash": {
-	  "image": "./assets/ElixirLogo.jpg",
+	  "image": "./assets/ElixirLogo.png",
 	  "backgroundColor": "#5170FF"
       }  
   }
