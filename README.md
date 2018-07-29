@@ -4,12 +4,12 @@
 ##### [learn more about our product and our story here.](https://www.elixirnonprofit.org/)
 ---
 ## About
-##### Elixir Nonprofit is creating a mobile application to provide information about free healthcare clinics to users across Washington State. We want to make getting medical attention more accessible for everyone by providing the tools for people to take hold of resources in their area. As an organization we believe everyone deserves the opportunity to seek medical attention, but have experienced that this is not always readily accessible. Our product will change that by giving more communities active roles in healthcare and giving individuals the agency they need to be confident in seeking help.
+##### Elixir Nonprofit is creating a mobile application to provide information about free and low-cost healthcare clinics to users across Washington State. We want to make getting medical attention more accessible for everyone by providing the tools for people to take hold of resources in their area. As an organization we believe everyone deserves the opportunity to seek medical attention, but have experienced that this is not always readily accessible. Our product will change that by giving more communities active roles in healthcare and giving individuals the agency they need to be confident in seeking help.
 ---
 ## Features
 ### Our product will have three core features:
-- The ability for users to search free clinics in their area by location and service tags through maps.
-- An accurate and updated list of free health centers and clinics in a database accessible to users through the mobile application.
+- The ability for users to search affordable clinics in their area by location and service tags through maps.
+- An accurate and updated list of free and low-cost health centers and clinics in a database accessible to users through the mobile application.
 - An individual view for each clinic we mention which will include information such as the clinic's name, hours, location, and contact information.
 ### Other features we hope to implement:
 - A review system that allows users to publicly and anonymously share their experiences with clinics, including the clinic’s type of care and position on checking patient documentation.
