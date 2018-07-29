@@ -12,9 +12,7 @@
 ### Our product will have three core features:
 - The ability for users to search affordable clinics in their area by location and service tags through maps.
 - An accurate and updated list of free and low-cost health centers and clinics in a database accessible to users through the mobile application.
-- An individual view for each clinic we mention which will include information such as the clinic's name, hours, location, and contact information.
-Map Feature                                              |  Search Feature
-:-------------------------------------------------------:|:----------------------------------------------------------------:
+- An individual view for each clinic we mention which will include information such as the clinic's name, hours, location, and contact information.  
 ![](../screenshots/Elixir/screenshots/feature_maps.png)  |  ![](../screenshots/Elixir/screenshots/feature_search.png)
 ### Other features we hope to implement:
 - A review system that allows users to publicly and anonymously share their experiences with clinics, including the clinic’s type of care and position on checking patient documentation.
