@@ -1,0 +1,59 @@
+#Cloudformation template for AWS stack
+
+Resources:
+
+  WashingtonStateClinicRosterBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: 'washington-state-clinic-roster-bucket-v1'
+      LifecycleCOnfiguration:
+        Rules:
+          ExpirationInDays: 730
+
+  CreateClinicsDatabaseQuery:
+    Type: AWS::Athena::NamedQuery
+    Properties:
+      Description: 'query creates clinics database'
+      Name: 'CreateClinicsDatabaseQuery'
+      QueryString: #TODO
+
+  CreateClinicsTableQuery:
+    Type: AWS::Athena::NamedQuery
+    Properties:
+      Description: 'query creates table schema'
+      Name: CreateClinicsTableQuery
+      QueryString: #TODO
+
+  SearchClinicsByTermQuery:
+    Type: AWS::Athena::NamedQuery
+    Properties:
+      Description: 'query returns all rows where the term appears in clinic name or services'
+      Name: SearchClinicsByTermQuery
+      QueryString: >
+                    SELECT * FROM “elixirhealthclinicroster”.”clinicinformation”
+                    WHERE clinic LIKE “%%s%”
+                    OR services LIKE “%%s%”
+
+  SearchClinicsLambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      Description: 'lambda searches clinic roster by term'
+      Handler: #TODO
+      Role:
+        Fn::GetAtt: [SearchClinicsLambdaExecutionRole, Arn]
+      Environment:
+        QUERY_LIST:
+          Fn::Join:
+            - ' '
+            - - Ref: CreateClinicsDatabaseQuery
+              - Ref: CreateClinicsTableQuery
+              - Ref: SearchClinicsByTermQuery
+
+  SearchClinicsLambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: SearchClinicsLambdaExecutionRole
+      ManagedPolicyArns:
+        #TODO
+      AssumeRolePolicyDocument:
+
