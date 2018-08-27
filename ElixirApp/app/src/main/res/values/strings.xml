@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">ElixirApp</string>
+    <string name="app_name">Elixir</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="nav_title_home">Home</string>
+    <string name="nav_title_search">Search</string>
+    <string name="nav_title_map">Map</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_search_view">search</string>
 </resources>

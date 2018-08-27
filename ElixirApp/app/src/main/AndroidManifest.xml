@@ -9,13 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomePage">
+        <activity android:name=".screens.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".screens.SearchActivity"
+            android:label="@string/title_activity_search" />
+        <activity
+            android:name=".screens.MapActivity"
+            android:label="@string/title_activity_map"></activity>
     </application>
 
 </manifest>
