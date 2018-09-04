@@ -3,13 +3,16 @@ package com.elixirnonprofit.elixirapp.listeners;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.annotation.NonNull;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.BottomNavigationView;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 
 import com.elixirnonprofit.elixirapp.R;
+import com.elixirnonprofit.elixirapp.screens.MainActivity;
 
 /**
  * Created by Falak on 8/25/18.
@@ -22,8 +25,9 @@ public class BottomNavigationListener implements BottomNavigationView.OnNavigati
     private LayoutInflater inflater;
     private LinearLayout parentContainer;
 
-    public BottomNavigationListener(Activity current) {
+    public BottomNavigationListener(MainActivity current) {
         super();
+        this.current = current;
         this.context = current.getApplicationContext();
         inflater = LayoutInflater.from(context);
         parentContainer = new LinearLayout(current);

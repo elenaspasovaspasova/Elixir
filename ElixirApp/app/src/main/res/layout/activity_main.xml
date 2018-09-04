@@ -9,9 +9,9 @@
     tools:context="com.elixirnonprofit.elixirapp.screens.MainActivity">
 
     <FrameLayout
-        android:id="@+id/main_content"
+        android:id="@+id/main_app_content"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="400dp"
         android:background="@color/colorBackgroundLightBlue">
 
     </FrameLayout>
